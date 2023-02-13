@@ -1,0 +1,300 @@
+html{
+  background-color:#000000;
+}
+/*style all text*/
+*{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 1px;
+    font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;
+  }
+/*portfolio header background*/
+  .portfolio{
+    width:100%;
+    height:150px;
+    margin:0px;
+    padding-top: 70px;
+    background-image: url(titleGIF.gif);
+  }
+
+  /*style headers*/
+  h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding-top:0px;
+    width: auto;
+    height:80px;
+    margin:0px;
+  }
+  
+  /*style titles*/
+  .title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:#ffffff;
+    text-align: center;
+  }
+
+  /*style border*/
+  .border{
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    margin: 5rem;
+    border-radius: 10px;
+  }
+
+  /*ensure fullscreen*/
+  body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding:0px;
+    margin:0px;
+  }
+
+  /*image scaling*/
+  img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  /*style for contact*/
+  .contact{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    background-color: white;
+  }
+
+  /*style for contact box*/
+  .contactbox{
+    color:white;
+    background-color: transparent;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    margin: 5rem;
+    background-image: url(marble.jpg);
+  }
+
+  /*style for buttons*/
+  .button {
+    border: none;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  /*color for button*/
+  .button1 {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  /*change color on hover*/
+  .button1:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+    /*style for small*/
+    .buttonsmall {
+      border: none;
+      color: white;
+
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    /*color for button*/
+    .button2 {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgb(255, 255, 255);
+    }
+    
+    /*change color on hover*/
+    .button2:hover {
+      background-color: rgb(10, 10, 10);
+      color: rgb(0, 0, 0);
+    }
+
+  /*navigation bar background*/
+  .header-background{
+      color:white;
+      font-size: 20px;
+      background-color: #000000;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      transition-duration: 0.4s;
+  }
+
+  /*navigation bar change color on hover*/
+  .header-background:hover{
+      color:#292828;
+      background-color:rgb(0, 0, 0);
+  }
+
+  /*navigation bar sticky*/
+  #navbar {
+    overflow: hidden;
+    background-color:black;
+    
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #696969;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 15px;
+
+  }
+  #navbar b {
+    float: right;
+    display: block;
+    color: #696969;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+
+  }
+  
+  #navbar a:hover {
+
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  #navbar b:hover {
+
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  /*footer background*/
+  .footer{
+    padding-top: 30px;
+    height: 50px;
+    background-color: #000000;
+
+  }
+
+  /*social media button style*/
+  .fa {
+    padding: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: black;
+  }
+  
+  /*social media button hover change color*/
+  .fa:hover {
+      opacity: 0.5;
+  }
+
+  /*flexbox*/
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .flex-left {
+    background-color: #000000;
+    padding: 0px;
+    flex: 50%;
+  }
+  
+  .flex-right {
+    background-color: #000000;
+    padding: 0px;
+    flex: 50%;
+  }
+  
+  /*make 2 columns into 1 when resize*/
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #ffffff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #ff8ed9; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#7b7878;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#000000; }
