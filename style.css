@@ -61,6 +61,18 @@ html{
     height: auto;
   }
 
+    /*image scaling*/
+    .img1 {
+      max-width: 50%;
+      height: auto;
+    }
+
+    img:hover {
+      opacity: 0.5;
+  }
+
+    
+
   /*style for contact*/
   .contact{
     font-family: Arial, Helvetica, sans-serif;
@@ -159,7 +171,7 @@ html{
   #navbar a {
     float: left;
     display: block;
-    color: #696969;
+    color: #b2b2b2;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
