@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  padding: 1px;
+  font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;
+}
+/*portfolio header background*/
+.portfolio{
+  width:100%;
+  height:150px;
+  margin:0px;
+  padding-top: 70px;
+  background-image: url(titleGIF.gif);
+}
+
+/*style headers*/
+h1{
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-top:0px;
+  width: auto;
+  height:80px;
+  margin:0px;
+}
+
+/*style titles*/
+.title{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color:#ffffff;
+  text-align: center;
+}
+
+/*style border*/
+.border{
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  margin: 5rem;
+  border-radius: 10px;
+}
+
+/*ensure fullscreen*/
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  padding:0px;
+  margin:0px;
+}
+
+  /*navigation bar background*/
+  .header-background{
+    color:white;
+    font-size: 20px;
+    background-color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition-duration: 0.4s;
+}
+
+/*navigation bar change color on hover*/
+.header-background:hover{
+    color:#292828;
+    background-color:rgb(0, 0, 0);
+}
+
+/*navigation bar sticky*/
+#navbar {
+  overflow: hidden;
+  background-color:black;
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #b2b2b2;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+#navbar b {
+  float: right;
+  display: block;
+  color: #696969;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+
+#navbar a:hover {
+
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#navbar b:hover {
+
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*footer background*/
+.footer{
+  padding-top: 30px;
+  height: 50px;
+  background-color: #000000;
+
+}
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-title{
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.container{
+  padding: 1em 0;
+  width: 50%;
+}
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    width: 33.33333%;
+  }
+}
+
+.container .title{
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}

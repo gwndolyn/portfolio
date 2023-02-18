@@ -2,7 +2,8 @@
 <html>
 <head>
 <title>Gwendolyn</title>
-<link href="style.css" rel="stylesheet" type="text/css" >
+<link href="css/style.css" rel="stylesheet" type="text/css" >
+<link href="css/gradient.css" rel="stylesheet" type="text/css" >
 <script type="text/javascript" src="script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -42,18 +43,20 @@
         <h1 id=about style="text-align: center;">About Me <br> ________________</h1>
         <br>
         <br>
+          <!--about me-->
   <!--photo-->
     <div class="flex-container">
       <div class="flex-left">
-        <p style="margin: 80px;">
-          Hello im Gwendolyn Leong, 19 this year. <br>I am a year 2 studying in Ngee Ann Polytechnic, School of ICT, <br>pursuing a diploma of Information Technology.<br>
+        <p style="margin: 50px; font-size: 20px; ">
+          Hello im Gwendolyn Leong, 19 this year. <br>I am a year 2 studying in Ngee Ann Polytechnic, School of ICT, <br>pursuing a diploma in <span class="boujee-text">Information Technology</span>.<br><br>
+
+          I am fluent in classics like Python and C#. <br><br>
+
+          My field of Interest's are <span class="boujee-text">Data Analytics</span> as well as <span class="boujee-text">Web Application Development</span>. <br>
                     <!--resume button-->
         <a href="pdf/Gwendolyn resume.pdf" class="button button1" target="_blank" text>Download my resume here!</a>
         </p>
-
       </div>
-
-  <!--about me-->
   <div class="flex-right">
       <br>
     <img src="img/me.jpg" width="auto" height="80px" display="flex" style="float: left; margin-right: 20px; margin-left: 20px; border-radius: 50%;">
@@ -67,32 +70,31 @@
         <h1 id="contact" style="text-align: center;">Skills <br> ________________</h1>
         <br>
       </section>
-      <div class="MagicScroll" data-options="autoplay: 1; step: 0; speed: 5000; mode: carousel; height: 100;">
-        <img src="img/android.png" />
-        <img src="img/java.png" />
-        <img src="img/js.png" />
-        <img src="img/c.png" />
-        <img src="img/sql.png" />
-        <img src="img/powerbi.png" />
-        <img src="img/android.png" />
-        <img src="img/java.png" />
-        <img src="img/js.png" />
-        <img src="img/c.png" />
-        <img src="img/sql.png" />
-        <img src="img/powerbi.png" />
-        <img src="img/android.png" />
-        <img src="img/java.png" />
-        <img src="img/js.png" />
-        <img src="img/c.png" />
-        <img src="img/sql.png" />
-        <img src="img/powerbi.png" />
-        <img src="img/android.png" />
-        <img src="img/java.png" />
-        <img src="img/js.png" />
-        <img src="img/c.png" />
-        <img src="img/sql.png" />
-        <img src="img/powerbi.png" />
-    </div>
+
+      <div style="position:relative;">
+        <a class="shape" text style="float: right;
+        display: block; padding: 12px; padding-right: 213px; z-index: 100; position: absolute; left: 85%;"></a>  
+        <div class="MagicScroll" data-options="autoplay: 1; step: 0; speed: 5000; mode: carousel; height: 100;">
+          <c class="shape">Robotic Process Automation</c>
+          <img src="img/UiPath.png" />
+          <c class="shape">Machine Learning</c>
+          <img src="img/jupyter.png" />
+          <img src="img/py.png" />
+          <c class="shape">Web App Dev</c>
+          <img src="img/htmlcssjs.png" />
+          <img src="img/MVC.png" />
+          <img src="img/c.png" />
+          <img src="img/sql.png" />
+          <c class="shape">Mobile App Dev</c>
+          <img src="img/android.png" />
+          <img src="img/java.png" />
+          <c class="shape">Object-Oriented Design</c>
+          <img src="img/vp.png" />
+          <c class="shape">Customer Experience Management</c>
+          <img src="img/powerbi.png" />
+          <img src="img/Salesforce.png" />
+      </div>
+      </div>
     
 
           <!--contact-->
@@ -156,8 +158,8 @@
     
 
   <!--footer-->
-  <p class="footer">
-    ©<script>document.write(new Date().getFullYear())</script> by Gwendolyn.
+  <p class="footer boujee-text">
+    ©<script>document.write(new Date().getFullYear())</script> Designed and developed by Gwendolyn.
 
   </p>
   
