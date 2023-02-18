@@ -1,3 +1,132 @@
+/*style all text*/
+*{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 1px;
+    font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;
+  }
+
+  /*style headers*/
+  h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding-top:0px;
+    width: auto;
+    height:80px;
+    margin:0px;
+  }
+  
+  /*style titles*/
+  .title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:#ffffff;
+    text-align: center;
+  }
+
+  /*style border*/
+  .border{
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    margin: 5rem;
+    border-radius: 10px;
+  }
+
+  /*ensure fullscreen*/
+  body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding:0px;
+    margin:0px;
+  }
+
+
+  /*navigation bar background*/
+  .header-background{
+    color:white;
+    font-size: 20px;
+    background-color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition-duration: 0.4s;
+}
+
+/*navigation bar change color on hover*/
+.header-background:hover{
+    color:#292828;
+    background-color:rgb(0, 0, 0);
+}
+
+/*navigation bar sticky*/
+#navbar {
+  overflow: hidden;
+  background-color:black;
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #b2b2b2;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+#navbar b {
+  float: right;
+  display: block;
+  color: #696969;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+
+}
+
+#navbar a:hover {
+
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#navbar b:hover {
+
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*footer background*/
+.footer{
+  padding-top: 30px;
+  height: 50px;
+  background-color: #000000;
+  z-index: 100;
+
+}
+
+
+img{
+    width: 103%;
+}
+
 .main-timeline{ position: relative; }
 .main-timeline:before,
 .main-timeline:after{
@@ -70,8 +199,8 @@
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: #fff;
-    border: 8px solid rgba(211,207,205,1);
+    background: #000000;
+    border: 8px solid rgb(0, 0, 0);
     float: left;
     margin-right: 25px;
     position: relative;
@@ -133,17 +262,17 @@
     background: rgba(211,207,205,1);
     border-radius: 7px;
     font-size: 25px;
-    color: #fff;
+    color: #000000;
 }
 .main-timeline .title{
     font-size: 25px;
     font-weight: bold;
-    color: rgba(211,207,205,1);
+    color: rgb(255, 255, 255);
     margin-top: 0;
 }
 .main-timeline .description{
     font-size: 14px;
-    color: #333;
+    color: #ffffff;
     text-align: justify;
 }
 .main-timeline .icon{

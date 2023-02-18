@@ -26,3 +26,32 @@
       }
     }
   }
+
+
+  .boujee-text1 {
+    --bg-size: 400%;
+    --color-one: rgb(247, 247, 211);
+    --color-two: rgb(233, 252, 89);
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .boujee-text1 {
+      animation: move-bg 8s linear infinite;
+    }
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
+  }
