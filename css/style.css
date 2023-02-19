@@ -240,6 +240,7 @@ html{
   .sticky + .content {
     padding-top: 60px;
   }
+  
 
   /*footer background*/
   .footer{
@@ -251,13 +252,11 @@ html{
 
   /*social media button style*/
   .fa {
-    padding: 20px;
-    width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   /*social media button hover change color*/
@@ -325,9 +324,9 @@ textarea {
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#7b7878;
+  background:#000000;
   border-radius:5px;
-  border:0;
+  border-color: #ffffff;
   cursor:pointer;
   color:white;
   font-size:24px;
@@ -337,6 +336,6 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#000000; }
+[type="submit"]:hover { background:#ffffff; color: #000000; }
 
 

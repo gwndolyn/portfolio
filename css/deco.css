@@ -69,3 +69,19 @@
     opacity: 1;
     transform: translate(0, 0);
   }
+
+  @media (max-width:834px) {
+    img#optionalstuff {
+      display: none;
+    }
+  }
+
+    /*social media button style*/
+    .fa {
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      color: rgb(255, 255, 255);
+    }
+    
