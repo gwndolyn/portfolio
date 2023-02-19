@@ -162,7 +162,7 @@ html{
 
   /*navigation bar change color on hover*/
   .header-background:hover{
-      color:#292828;
+      color:#000000;
       background-color:rgb(0, 0, 0);
   }
 
@@ -176,7 +176,7 @@ html{
   #navbar a {
     float: left;
     display: block;
-    color: #b2b2b2;
+    color: #ffffff;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
@@ -196,9 +196,32 @@ html{
   
   #navbar a:hover {
 
-    color: #ffffff;
+    --bg-size: 400%;
+    --color-one: rgb(110, 157, 251);
+    --color-two: rgb(255, 161, 219);
     font-size: 17px;
     font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .a {
+      animation: move-bg 8s linear infinite;
+    }
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
   }
 
   #navbar b:hover {

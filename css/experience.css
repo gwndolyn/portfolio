@@ -71,7 +71,7 @@
 #navbar a {
   float: left;
   display: block;
-  color: #b2b2b2;
+  color: #ffffff;
   text-align: center;
   padding: 0px 16px;
   text-decoration: none;
@@ -91,10 +91,33 @@
 
 #navbar a:hover {
 
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: bold;
-}
+    --bg-size: 400%;
+    --color-one: rgb(110, 157, 251);
+    --color-two: rgb(255, 161, 219);
+    font-size: 17px;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .a {
+      animation: move-bg 8s linear infinite;
+    }
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
+  }
 
 #navbar b:hover {
 
@@ -139,7 +162,7 @@ img{
     content: "";
     width: 3px;
     height: 100%;
-    background: #bababa;
+    background-image: linear-gradient(rgb(95, 164, 255), rgb(255, 135, 231));
     position: absolute;
     top: 0;
     left: 50%;
@@ -160,11 +183,11 @@ img{
 .main-timeline .timeline:first-child:before,
 .main-timeline .timeline:last-child:before{
     content: "";
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     background: #fff;
-    border: 4px solid rgba(211,207,205,1);
+
     position: absolute;
     top: 0;
     right: -14px;
@@ -189,7 +212,7 @@ img{
     content: "";
     width: 100%;
     height: 5px;
-    background: rgba(211,207,205,1);
+    background: rgb(255, 255, 255);
     position: absolute;
     top: 88px;
     left: 0;
@@ -209,14 +232,14 @@ img{
     content: "";
     width: 26px;
     height: 30px;
-    background: rgba(211,207,205,1);
+    background: rgb(255, 255, 255);
     margin: auto;
     position: absolute;
     top: 0;
     right: -33px;
     bottom: 0;
     z-index: -1;
-    box-shadow: inset 7px 0 9px -7px #444;
+    box-shadow: inset 7px 0 9px -7px #ffffff;
 }
 .main-timeline .circle span{
     display: block;
@@ -259,10 +282,11 @@ img{
     display: block;
     padding: 10px;
     margin: 10px 0 50px 0;
-    background: rgba(211,207,205,1);
+    background: rgb(255, 255, 255);
     border-radius: 7px;
     font-size: 25px;
     color: #000000;
+    font-weight: bold;
 }
 .main-timeline .title{
     font-size: 25px;
@@ -280,7 +304,7 @@ img{
     height: 25px;
     border-radius: 50%;
     background: #fff;
-    border: 4px solid rgba(211,207,205,1);
+    border: 4px solid rgb(255, 255, 255);
     position: absolute;
     top: 78px;
     right: -14px;
@@ -289,7 +313,7 @@ img{
     content: "";
     width: 15px;
     height: 25px;
-    background: rgba(211,207,205,1);
+    background: rgb(255, 255, 255);
     margin: auto;
     position: absolute;
     top: -1px;
@@ -327,7 +351,7 @@ img{
 .main-timeline .timeline:nth-child(2n) .circle:before{
     right: auto;
     left: -33px;
-    box-shadow: -7px 0 9px -7px #444 inset;
+    box-shadow: -7px 0 9px -7px #ffffff inset;
 }
 .main-timeline .timeline:nth-child(2n) .circle span:before,
 .main-timeline .timeline:nth-child(2n) .circle span:after{
@@ -390,7 +414,7 @@ img{
     .main-timeline .timeline:nth-child(2n) .circle:before{
         right: -33px;
         left: auto;
-        box-shadow: 7px 0 9px -7px #444 inset;
+        box-shadow: 7px 0 9px -7px #ffffff inset;
     }
     .main-timeline .timeline:nth-child(2n) .circle span:before,
     .main-timeline .timeline:nth-child(2n) .circle span:after{

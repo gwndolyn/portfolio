@@ -1,72 +1,268 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My projects</title>
-<link href="style.css" rel="stylesheet" type="text/css" >
+<title>Projects</title>
+
+<link href="css/deco.css" rel="stylesheet" type="text/css" >
+
+<link href="css/projects.css" rel="stylesheet" type="text/css" >
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+<script type="text/javascript" src="magicscroll/magicscroll.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<!--title-->
+<body style="background-color: black; ">
+
 <!-- Navigation bar -->
-<div id="navbar">
-    <a href="index.html" class="header-background">Home</a>
-    <a href="skills.html" class="header-background">Skills</a>
-    <a href="projects.html" class="header-background">Projects</a>
+<div id="navbar" style="padding:20px;  z-index: 100;">
+    <a href="index.html" class="header-background"> <img src="img/logo.jpg" style="width: 70px; max-width: 50%;"></a>
     <a href="experiences.html" class="header-background">Experiences</a>
-    <a href="contactme.html" class="header-background">Contact Me</a>
+    <a href="certs.html" class="header-background">Certificates</a>
+    <a href="projects.html" class="header-background">Projects</a>
+    <a href="volunteer.html" class="header-background">Volunteer Work</a>
+      <!--resume button-->
+    <!--<b href="/pdf/Gwendolyn resume.pdf" class="buttonsmall button2" target="_blank" text>Download CV</b> -->
+    <!--<b href="contactme.html" class="header-background">Contact</b> -->
     </div>
     <script type="text/javascript" src="script.js"></script>
 
- <!--projects-->
- <body>
- <h1 id=projects>Projects</h1>
+  <!--portfolio-->
+      <section class="border">
+        <h1 id=about style="text-align: center; color: white;">My <span class="boujee-text">Projects</span> <br> ________________</h1>
+        <span style="font-size: 10px; color: white;">(In Reverse Chronological Order)</span>
+        <br>
+        <br>
 
- <!--project 1-->
- <section class="border">
- <div class="flex-container">
-  <div class="flex-left">
-    <img src="appicon.png" width="auto" height="50px" style="float: left; margin-right: 30px; margin-left: 30px">
-  </div>
-  <div class="flex-right">
-    App icon redesign. <br>
-    Designed using Adobe Illustrator for my Design Principles assignment. <br>
-    It is an app icon redesign of the Spotify app.
-  </div>
-</div>
- </section>
 
- <!--project 2-->
- <section class="border">
-  <div class="flex-container">
-   <div class="flex-left">
-    <img src="splashscreen.gif" width="auto" height="50px" style="float: left; margin-right: 30px; margin-left: 30px">
-   </div>
-    <div class="flex-right">
-      Splashscreen redesign. <br>
-      Designed using Adobe Illustrator and Adobe Photoshop for my Design Principles Assignment. <br>
-      It is a redesign of the Spotify app's splashscreen.
-   </div>
- </div>
-  </section>
+          <table>
+            <div class="row" style="padding-bottom: 30px;">
 
-  <!--project 3-->
-  <section class="border">
-    <div class="flex-container">
-     <div class="flex-left">
-      <img src="infographic.jpg" width="auto" height="50px" style="float: left; margin-right: 30px; margin-left: 30px">
-     </div>
-      <div class="flex-right">
-        App infographic. <br>
-        Designed using Adobe Illustrator for my Design Principles Assignment.
-     </div>
-   </div>
-    </section>
-  </body>
 
- <!--home button-->
- <a href="index.html" class="button button1">Home</a>
+            <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header">OCBC ITracker Mobile Application</div>
+              <img class="card-image" src="projects/mobile.png" alt="Card 2 Image" style="height: 50%;">
+              <p class="card-paragraph">Created a mobile application to allow OCBC customers to track their account application status on their mobile phone</p>
+              <div class="card-tags">
+                <span class="card-tag">Android Studio</span>
+                <span class="card-tag">Java</span>
+                <span class="card-tag">SQLite</span>
+              </div>
+              <div class="card-buttons">
+                <a href="https://github.com/gwndolyn/PFD_iTracker_MobileApp" target="_blank" text>
+                  <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                  <a href="projects/demo video.mp4" target="_blank" text>
+                    <button class="card-demo-button"><i class="fa fa-laptop"></i> Demo</button></a>
+                    <a href="https://gtgwendolyn.wixsite.com/website/ocbc" target="_blank" text>
+                      <button class="card-blog-button"><i class="fa fa-pencil"></i> Blog</button></a>
+              </div>
+              </div>
+            </div>
 
-   <!--footer-->
-   <p class="footer">
-    ©2021 by Gwendolyn.
+            <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header">OCBC ITracker Web Application</div>
+              <img class="card-image" src="projects/ocbc.png" alt="Card 3 Image">
+              <p class="card-paragraph">Created a web application to allow OCBC users to track their account application status as well as for OCBC staff to access and update customers' status.</p>
+              <div class="card-tags">
+                <span class="card-tag">C#</span>
+                <span class="card-tag">ASP.NET</span>
+                <span class="card-tag">MVC</span>
+                <span class="card-tag">API</span>
+                <span class="card-tag">SQL</span>
+                <span class="card-tag">Power Bi</span>
+              </div>
+              <div class="card-buttons">
+                <a href="https://github.com/gwndolyn/ITracker-Web-Application" target="_blank" text>
+                  <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                  <a href="projects/demo video.mp4" target="_blank" text>
+                    <button class="card-demo-button"><i class="fa fa-laptop"></i> Demo</button></a>
+                    <a href="https://gtgwendolyn.wixsite.com/website/ocbc" target="_blank" text>
+                      <button class="card-blog-button"><i class="fa fa-pencil"></i> Blog</button></a>
+              </div>
+              </div>
+            </div>
+            </div>
+
+
+            <div class="row" style="padding-bottom: 30px;">
+
+              <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header">Machine Learning</div>
+              <img class="card-image" src="projects/ml.png" alt="Card 1 Image">
+              <p class="card-paragraph">Using the HR Analytics dataset, I trained the classifier model using ensemble methods to predict the chances of an employee getting promoted. Using the Airbnb dataset, I trained the regressor model using ensemble methods to predict the prices of Airbnbs at different neighbourhoods. Both models managed to achieve a model accuracy of above 85%. </p>
+              <div class="card-tags">
+                <span class="card-tag">Python</span>
+                <span class="card-tag">Machine Learning</span>
+                <span class="card-tag">Neural Networks</span>
+                <span class="card-tag">Algorithms</span>
+              </div>
+              <div class="card-buttons">
+                <a href="https://github.com/gwndolyn/Machine-Learning-Assignment" target="_blank" text>
+                  <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header">Expense Tracker</div>
+              <img class="card-image" src="projects/expense.png" alt="Card 2 Image">
+              <p class="card-paragraph">Created a Monthly Expense Tracker to set budgets and keep track on spendings for various categories as well as visualize expenses </p>
+              <div class="card-tags">
+                <span class="card-tag">Excel</span>
+                <span class="card-tag">VBA</span>
+              </div>
+              <div class="card-buttons">
+                  <a href="https://docs.google.com/spreadsheets/d/1gqsZkwWjw5JaK_Y8QwsuYg05Ni9S4OZy/edit#gid=1383397567" target="_blank" text>
+                <button class="card-demo-button"><i class="fa fa-laptop"></i> Demo</button></a>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+            <div class="card">
+              <div class="card-header">GPA Calculator</div>
+              <img class="card-image" src="projects/gpa.png" alt="Card 3 Image">
+              <p class="card-paragraph">Created a GPA Calculator for students to calculate their GPA </p>
+              <div class="card-tags">
+                <span class="card-tag">Excel</span>
+              </div>
+              <div class="card-buttons">
+                  <a href="https://docs.google.com/spreadsheets/d/1fVEA-7P26Et5SzV413N758VSJ3RE3qUY/edit?usp=sharing&ouid=114436406465873239309&rtpof=true&sd=true" target="_blank" text>
+                    <button class="card-demo-button"><i class="fa fa-laptop"></i> Demo</button></a>
+              </div>
+              </div>
+            </div>
+            </div>
+
+
+                <div class="row" style="padding-bottom: 30px;">
+
+                  <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-header">Applied Analytics</div>
+                  <img class="card-image" src="projects/aa.png" alt="Card 1 Image">
+                  <p class="card-paragraph">Using Natural Language Processing and Text Analysis, to extract keywords from each BBC document and
+                    analyze them using association rule mining to predict the category of the documents based on the keywords.</p>
+                  <div class="card-tags">
+                    <span class="card-tag">Python</span>
+                    <span class="card-tag">NLP</span>
+                    <span class="card-tag">Machine Learning</span>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="https://github.com/gwndolyn/Applied-analytics-project" target="_blank" text>
+                      <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-header">Robotic Process Automation</div>
+                  <img class="card-image" src="projects/rpa.png" alt="Card 2 Image">
+                  <p class="card-paragraph">Created an automation to assist Vestas Wind Co to scrape financial data and calculate matrices and trends over the years. Visualizations are also created. </p>
+                  <div class="card-tags">
+                    <span class="card-tag">RPA</span>
+                    <span class="card-tag">UiPath</span>
+                    <span class="card-tag">VB</span>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="https://github.com/gwndolyn/RPA-uipath-assignment" target="_blank" text>
+                      <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                      <a href="https://youtu.be/IRZF7Fu8Pn4" target="_blank" text>
+                    <button class="card-demo-button"><i class="fa fa-laptop"></i> Demo</button></a>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-header">ZZ Fashion</div>
+                  <img class="card-image" src="projects/web.png" alt="Card 3 Image">
+                  <p class="card-paragraph">Created a customer relation management website to allow various staff roles to login and manage their customers.</p>
+                  <div class="card-tags">
+                    <span class="card-tag">C#</span>
+                    <span class="card-tag">ASP.NET</span>
+                    <span class="card-tag">MVC</span>
+                    <span class="card-tag">SQL</span>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="https://bitbucket.org/kamiislu/web2022apr_p02_t3/src/master/" target="_blank" text>
+                      <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                  </div>
+                  </div>
+                </div>
+                </div>
+
+
+                <div class="row" style="padding-bottom: 30px;">
+
+                  <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-header">Movie Ticketing System</div>
+                  <img class="card-image" src="projects/c.png" alt="Card 1 Image">
+                  <p class="card-paragraph">Created a movie ticketing system for Singaplex to allow customers to purchase tickets easily.</p>
+                  <div class="card-tags">
+                    <span class="card-tag">C#</span>
+                    <span class="card-tag">Object Oriented Programming</span>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="https://bitbucket.org/gwndolyn/prg2_t02_team7/src/master/" target="_blank" text>
+                      <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-header">Blacktag</div>
+                  <img class="card-image" src="projects/blacktag.png" alt="Card 2 Image">
+                  <p class="card-paragraph">This is a e-commerce website, Blacktag that is coded using html, css, js and API.</p>
+                  <div class="card-tags">
+                    <span class="card-tag">HTML</span>
+                    <span class="card-tag">CSS</span>
+                    <span class="card-tag">JS</span>
+                    <span class="card-tag">API</span>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="https://github.com/gwndolyn/ID_blacktag_Website" target="_blank" text>
+                      <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                      <a href="https://smyyhzai.github.io/ID_blacktag_Website/index.html" target="_blank" text>
+                    <button class="card-demo-button"><i class="fa fa-laptop"></i> Demo</button></a>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-header">Simp City</div>
+                  <img class="card-image" src="projects/py.png" alt="Card 3 Image">
+                  <p class="card-paragraph">Created a building game that can be played in an IDE that was built using Python</p>
+                  <div class="card-tags">
+                    <span class="card-tag">Python</span>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="https://drive.google.com/file/d/1TNTS1PBgfbZ5KBTWahguOXlMLHubHYvb/view" target="_blank" text>
+                    <button class="card-github-button"><i class="fa fa-github"></i> GitHub</button></a>
+                  </div>
+                  </div>
+                </div>
+                </div>
+
+  <!--footer-->
+  <p class="footer boujee-text">
+    ©<script>document.write(new Date().getFullYear())</script> Designed and developed by Gwendolyn.
+
   </p>
-</html>
+  
+</body>
+  </html>
