@@ -22,20 +22,28 @@
 
 <h1 style="margin:100px;">
   <img id="optionalstuff" src="img/fullme.jpg" style="width: 100px;">
-  <a href="" style="font-size: 4vw; font-weight: bold; font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"class="typewrite" id="typewriter" data-period="2000" data-type='[ "Gwendolyn`s portfolio."]'>
+  <a href="" style=" font-weight: bold; font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"class="typewrite example" id="typewriter" data-period="2000" data-type='[ "Gwendolyn`s portfolio."]'>
     <span class="wrap"></span>
   </a>
 </h1>
 
 <!-- Navigation bar -->
 
-<div id="navbar" style="padding:20px;  z-index: 100;">
+<div id="navbar" style=" padding:20px; z-index: 100;">
+  <span id="web">
     <a href="index.html" class="header-background"> <img src="img/logo.jpg" style="width: 70px; max-width: 50%;"></a>
-    <a href="experiences.html" class="header-background">Experiences</a>
-    <a href="certs.html" class="header-background">Certificates</a>
-    <a href="projects.html" class="header-background">Projects</a>
-    <a href="volunteer.html" class="header-background">Volunteer Work</a>
-    </a>
+    <a href="experiences.html" class="header-background"><img src="img/experiences.png" style="width: 25px; max-width: 50%;">Experiences</a>
+    <a href="certs.html" class="header-background"><img src="img/certs.png" style="width: 25px; max-width: 50%;">Certificates</a>
+    <a href="projects.html" class="header-background"><img src="img/projects.png" style="width: 25px; max-width: 50%;">Projects</a>
+    <a href="volunteer.html" class="header-background"><img src="img/volunteer.png" style="width: 25px; max-width: 50%;">Volunteer Work</a>
+  </span>
+  <span id="mobile" style="text-align: center;">
+    <a href="index.html" class=""> <img src="img/logo.jpg" style="width: 50px; max-width: 50%;"></a>
+    <a href="experiences.html" class=""><img src="img/experiences.png" style="width: 50px; max-width: 50%;"></a>
+    <a href="certs.html" class=""><img src="img/certs.png" style="width: 50px; max-width: 50%;"></a>
+    <a href="projects.html" class=""><img src="img/projects.png" style="width: 50px; max-width: 50%;"></a>
+    <a href="volunteer.html" class=""><img src="img/volunteer.png" style="width: 50px; max-width: 50%;"></a>
+  </span>
       <!--resume button-->
     <!--<b href="/pdf/Gwendolyn resume.pdf" class="buttonsmall button2" target="_blank" text>Download CV</b> -->
     <!--<b href="contactme.html" class="header-background">Contact</b> -->
@@ -47,34 +55,34 @@
       <section class="border">
         <h1 id=about style="text-align: center;">About Me <br> ________________</h1>
         <br>
-        <br>
+        <br><br><br>
           <!--about me-->
   <!--photo-->
     <div class="flex-container">
       <div class="flex-left">
-        <p style="margin: 50px; font-size: 20px; ">
-          Hello im <span class="boujee-text">Gwendolyn Leong</span>, 19 this year. <br>I am a year 2 studying in Ngee Ann Polytechnic, School of ICT, <br>pursuing a diploma in <span class="boujee-text">Information Technology</span>.<br><br>
+        <p style=" font-size: 20px; margin: 10px;">
+          <br>Hello im <span class="boujee-text">Gwendolyn Leong</span>, 19 this year. I am a year 2 studying<br> in Ngee Ann Polytechnic, School of ICT, <br>pursuing a diploma in <span class="boujee-text">Information Technology</span>.<br><br>
 
-          I am fluent in classics like Python and C#. <br><br>
+          I am fluent in classics such as Python and C#. <br><br>
 
-          My field of Interests are <span class="boujee-text">Data Analytics</span> as well as <span class="boujee-text">Web Application Development</span>. <br>
+          My field of Interests are <span class="boujee-text">Data Analytics</span> as well as <span class="boujee-text">Web <br>Application Development</span>. <br>
                     <!--resume button-->
         <a href="pdf/Gwendolyn resume.pdf" class="button button1" target="_blank" text>Download my resume here!</a>
         </p>
       </div>
   <div class="flex-right">
       <br>
-    <img src="img/me.jpg" display="flex" style="float: left; margin-right: 20px; margin-left: 20px; border-radius: 50%; max-width: 50%;">
+    <img src="img/me.jpg" display="flex" style=" margin-right: 20px; margin-left: 20px; border-radius: 50%; max-width: 50%;">
       </div>
     </div>
       </section>
 
 
       <!--skills-->
-      <div class="tag">
+      <div class="tag" id="web">
       <section class="border">
         <h1 id="contact" style="text-align: center;">Skills <br> ________________</h1>
-        <br>
+        <br><br><br><br>
       </section>
 
       <div style="position:relative;">
@@ -108,24 +116,48 @@
 
       </div>
       </div>
+      <br><br><br><br>
     </div>
-    
+
     
           <!--contact-->
-    <section class="border tag">
+    <div class="border tag" id="web">
       <h1 id="contact" style="text-align: center;">Contact Me <br> ________________</h1>
       <br>
-      <br>
-      <br>
-      <img src="img/infobtr.png" usemap="#workmap" style="height:438px; width:654.5px;" onContextMenu="return false;" draggable="false" (dragstart)="false;">
-      <map name="workmap">
-        <area target="_blank" alt="maps" title="maps" href="https://goo.gl/maps/ABmszTkBdH9AivD37" coords="174,178,245,99" shape="rect">
-        <area target="_blank" alt="phone" title="phone" href="wa.link/id4yxq" coords="295,99,365,178" shape="rect">
-        <area target="_blank" alt="mail" title="mail" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDQzBbwsxlHRNFBdlJXcCqVGZQvhSTLxQMBXdWFFJVmwgMwztgStZJlpzMgGRQxnWmMGzm" coords="410,100,485,179" shape="rect">
-        <area target="_blank" alt="instagram" title="instagram" href="https://instagram.com/gwenxdolyn" coords="180,194,242,273" shape="rect">
-        <area target="_blank" alt="linkedin" title="linkedin" href="https://www.linkedin.com/in/gwndolyn/" coords="295,195,360,273" shape="rect">
-        <area target="_blank" alt="github" title="github" href="https://github.com/gwndolyn" coords="412,192,479,274" shape="rect">
-      </map>
+
+                <!--web-->
+      <div >
+        <br>
+        <br>
+        <img src="img/infobtr.png" usemap="#workmap" style="height:438px; width:654.5px;" onContextMenu="return false;" draggable="false" (dragstart)="false;">
+        <map name="workmap">
+          <area target="_blank" alt="maps" title="maps" href="https://goo.gl/maps/ABmszTkBdH9AivD37" coords="174,178,245,99" shape="rect">
+          <area target="_blank" alt="phone" title="phone" href="https://wa.me/96841062" coords="295,99,365,178" shape="rect">
+          <area target="_blank" alt="mail" title="mail" href=mailto:gwenxdolyn@gmail.com coords="410,100,485,179" shape="rect">
+          <area target="_blank" alt="instagram" title="instagram" href="https://instagram.com/gwenxdolyn" coords="180,194,242,273" shape="rect">
+          <area target="_blank" alt="linkedin" title="linkedin" href="https://www.linkedin.com/in/gwndolyn/" coords="295,195,360,273" shape="rect">
+          <area target="_blank" alt="github" title="github" href="https://github.com/gwndolyn" coords="412,192,479,274" shape="rect">
+        </map>
+      </div>
+      </div>
+
+          <!--mobile-->
+          <br>
+      <div id="mobile" style="font-size: 30px;">
+        <a href="https://goo.gl/maps/ABmszTkBdH9AivD37" target="_blank" text>
+          <button3><i class="fa fa-map"></i></button3></a>
+          <a href="https://wa.me/96841062" target="_blank" text>
+            <button3><i class="fa fa-phone"></i></button3></a>
+            <a href=mailto:gwenxdolyn@gmail.com target="_blank" text>
+              <button3><i class="fa fa-envelope"></i></button3></a>
+        <a href="https://instagram.com/gwenxdolyn" target="_blank" text>
+          <button3><i class="fa fa-instagram"></i></button3></a>
+          <a href="https://www.linkedin.com/in/gwndolyn/" target="_blank" text>
+            <button3><i class="fa fa-linkedin"></i></button3></a>
+        <a href="https://github.com/gwndolyn" target="_blank" text>
+          <button3><i class="fa fa-github"></i></button3></a>
+      </div>
+
       <!--
       <div style="text-align: center;" class="row">
         <div class="col-sm-2"></div>
@@ -166,18 +198,18 @@
     </section>
   -->
       <!--get in touch-->
-      
-      <form class="tag">  
-        <h1 id="contact" style="text-align: center;">Leave me a Message!!  <br> ________________</h1>   
-        <br><br><br>
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-        <input type="submit" onclick="submit()" value="SUBMIT"/>
-        
-      </form>
+        <form class="tag" style="">  
+          <h1 id="contact" style="text-align: center;">Leave me a Message!!  <br> ________________</h1>   
+          <br><br><br>
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <input type="submit" onclick="submit()" value="SUBMIT"/>
+          
+        </form>
 
-    </section>
+
+
 
     
 
