@@ -13,6 +13,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
 <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
+<script src="resize/jquery.rwdImageMaps.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -21,18 +22,20 @@
 
 <h1 style="margin:100px;">
   <img id="optionalstuff" src="img/fullme.jpg" style="width: 100px;">
-  <a href="" style="font-size: 60px; font-weight: bold; font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"class="typewrite" id="typewriter" data-period="2000" data-type='[ "Gwendolyn`s portfolio."]'>
+  <a href="" style="font-size: 4vw; font-weight: bold; font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"class="typewrite" id="typewriter" data-period="2000" data-type='[ "Gwendolyn`s portfolio."]'>
     <span class="wrap"></span>
   </a>
 </h1>
 
 <!-- Navigation bar -->
+
 <div id="navbar" style="padding:20px;  z-index: 100;">
-    <a href="index.html" class="header-background"> <img src="img/logo.jpg" style="width: 70px;"></a>
+    <a href="index.html" class="header-background"> <img src="img/logo.jpg" style="width: 70px; max-width: 50%;"></a>
     <a href="experiences.html" class="header-background">Experiences</a>
     <a href="certs.html" class="header-background">Certificates</a>
     <a href="projects.html" class="header-background">Projects</a>
     <a href="volunteer.html" class="header-background">Volunteer Work</a>
+    </a>
       <!--resume button-->
     <!--<b href="/pdf/Gwendolyn resume.pdf" class="buttonsmall button2" target="_blank" text>Download CV</b> -->
     <!--<b href="contactme.html" class="header-background">Contact</b> -->
@@ -61,7 +64,7 @@
       </div>
   <div class="flex-right">
       <br>
-    <img src="img/me.jpg" width="auto" height="80px" display="flex" style="float: left; margin-right: 20px; margin-left: 20px; border-radius: 50%;">
+    <img src="img/me.jpg" display="flex" style="float: left; margin-right: 20px; margin-left: 20px; border-radius: 50%; max-width: 50%;">
       </div>
     </div>
       </section>
@@ -114,6 +117,16 @@
       <br>
       <br>
       <br>
+      <img src="img/infobtr.png" usemap="#workmap" style="height:438px; width:654.5px;" onContextMenu="return false;" draggable="false" (dragstart)="false;">
+      <map name="workmap">
+        <area target="_blank" alt="maps" title="maps" href="https://goo.gl/maps/ABmszTkBdH9AivD37" coords="174,178,245,99" shape="rect">
+        <area target="_blank" alt="phone" title="phone" href="wa.link/id4yxq" coords="295,99,365,178" shape="rect">
+        <area target="_blank" alt="mail" title="mail" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDQzBbwsxlHRNFBdlJXcCqVGZQvhSTLxQMBXdWFFJVmwgMwztgStZJlpzMgGRQxnWmMGzm" coords="410,100,485,179" shape="rect">
+        <area target="_blank" alt="instagram" title="instagram" href="https://instagram.com/gwenxdolyn" coords="180,194,242,273" shape="rect">
+        <area target="_blank" alt="linkedin" title="linkedin" href="https://www.linkedin.com/in/gwndolyn/" coords="295,195,360,273" shape="rect">
+        <area target="_blank" alt="github" title="github" href="https://github.com/gwndolyn" coords="412,192,479,274" shape="rect">
+      </map>
+      <!--
       <div style="text-align: center;" class="row">
         <div class="col-sm-2"></div>
         <a href="https://goo.gl/maps/ABmszTkBdH9AivD37" target="_blank">
@@ -151,7 +164,7 @@
       <div class="col-sm-2" style="padding-top: 20px;"> @gwndolyn</div>
     </div>
     </section>
-
+  -->
       <!--get in touch-->
       
       <form class="tag">  
@@ -177,7 +190,7 @@
         <button3><i class="fa fa-linkedin"></i></button3></a>
 
   </p>
-  
+  <!--<script>$('img[usemap]').rwdImageMaps();</script>-->
 </body>
   </html>
   

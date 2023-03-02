@@ -13,6 +13,7 @@ function myFunction() {
   }
 }
 
+
 //submit form action
 function submit() {
   alert("Message have been submitted! Have a nice day ahead!");
@@ -110,4 +111,7 @@ function tag() {
 }
 
 window.addEventListener("scroll", tag);
+
+var myVar;
+
 

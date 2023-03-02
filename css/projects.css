@@ -24,8 +24,7 @@ h1{
 .border{
   text-align: center;
   flex-wrap: wrap;
-  padding: 3rem;
-  margin: 5rem;
+  padding: 2rem;
   border-radius: 10px;
 }
 
