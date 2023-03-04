@@ -160,6 +160,48 @@ html{
 
   }
 
+  /* Card styles */
+.card {
+
+  padding: 20px;
+
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.card-tags {
+  margin-bottom: 10px;
+}
+
+.card-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ddc9f3;
+  color: #000;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
   /*social media button style*/
   .fa {
     text-align: center;
@@ -218,12 +260,12 @@ form { max-width:420px; margin:50px auto; padding: 20px; }
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width:90%;
   box-sizing: border-box;
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #ff8ed9; }
+.feedback-input:focus { border:2px solid #e58eff; }
 
 textarea {
   height: 150px;
@@ -233,7 +275,7 @@ textarea {
 
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
+  width: 90%;
   background:#000000;
   border-radius:5px;
   border-color: #ffffff;
@@ -286,23 +328,23 @@ textarea {
 }
 
 
-@media (min-width:701px) {
+@media (min-width:972px) {
   h1#web {
 
   }
 }
-@media (max-width:700px) {
+@media (max-width:971px) {
   h1#web {
     display: none;
   }
 }
 
-@media (min-width:701px) {
+@media (min-width:972px) {
   h1#mobile {
     display: none;
   }
 }
-@media (max-width:700px) {
+@media (max-width:971px) {
   h1#mobile {
 
   }
