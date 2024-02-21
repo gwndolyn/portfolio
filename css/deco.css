@@ -1,3 +1,114 @@
+/*navigation bar background*/
+.header-background{
+  color:white;
+  font-size: 20px;
+  background-color: #000000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition-duration: 0.4s;
+}
+
+/*navigation bar change color on hover*/
+.header-background:hover{
+  color:#000000;
+  background-color:rgb(0, 0, 0);
+}
+
+/*navigation bar sticky*/
+#navbar {
+overflow: hidden;
+background-color:black;
+
+}
+
+#navbar a {
+float: left;
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 0px 16px;
+text-decoration: none;
+font-size: 15px;
+
+}
+#navbar b {
+float: left;
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 0px;
+text-decoration: none;
+font-size: 15px;
+
+}
+
+#navbar a:hover {
+
+--bg-size: 400%;
+--color-one: rgb(110, 157, 251);
+--color-two: rgb(255, 161, 219);
+font-size: 17px;
+font-weight: bold;
+background: linear-gradient(
+    90deg,
+    var(--color-one),
+    var(--color-two),
+    var(--color-one)
+  )
+  0 0 / var(--bg-size) 100%;
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.a {
+  animation: move-bg 8s linear infinite;
+}
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+}
+
+
+#navbar b:hover {
+
+color: #ffffff;
+font-size: 17px;
+font-weight: bold;
+}
+
+/*navigation bar sticky*/
+#navbarm {
+  overflow: hidden;
+  background-color:black;
+  
+  }
+  
+  #navbarm a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 15px;
+  
+  }
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
 
 .boujee-text {
     --bg-size: 400%;
@@ -70,7 +181,7 @@
     transform: translate(0, 0);
   }
 
-  @media (max-width:834px) {
+  @media (max-width:972px) {
     img#optionalstuff {
       display: none;
     }
@@ -83,5 +194,27 @@
       margin: 5px 2px;
       border-radius: 50%;
       color: rgb(255, 255, 255);
+    }
+    
+    @media (max-width:700px) {
+      span#web {
+        display: none;
+      }
+    }
+    @media (min-width:701px) {
+      span#web {
+    
+      }
+    }
+    
+    @media (max-width:700px) {
+      span#mobile {
+
+      }
+    }
+    @media (min-width:701px) {
+      span#mobile {
+        display: none;
+      }
     }
     

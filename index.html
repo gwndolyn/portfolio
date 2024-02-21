@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Gwendolyn</title>
+<link rel="shortcut icon" href="img/titleimg.png" />
 <link href="css/style.css" rel="stylesheet" type="text/css" >
 <link href="css/deco.css" rel="stylesheet" type="text/css" >
 <script type="text/javascript" src="script.js"></script>
@@ -12,29 +13,52 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
 <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
+<script src="resize/jquery.rwdImageMaps.min.js"></script>
+<meta name="Description" content="Gwendolyn's amazing portfolio">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <!--title-->
 <body style="background-color: black; ">
 
-<h1 style="margin:100px;">
-  <img id="optionalstuff" src="img/fullme.jpg" style="width: 100px;">
-  <a href="" style="font-size: 60px; font-weight: bold; font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"class="typewrite" id="typewriter" data-period="2000" data-type='[ "Gwendolyn`s portfolio."]'>
+<h1 id="web"style="margin-top:150px; margin-bottom:150px;">
+  <img id="optionalstuff" src="img/fullme.jpg" style="width: 100px;" onContextMenu="return false;" draggable="false" (dragstart)="false;">
+  <a href="" style=" font-weight: bold; font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"class="typewrite example" id="typewriter" data-period="2000" data-type='[ "Gwendolyn`s portfolio."]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+
+<h1 id="mobile"style="margin-top:100px; margin-bottom:200px;">
+  <img class="example" src="img/fullme.jpg" style="width: 100px;"><br><br>
+  <a href="" style=" font-weight: bold; font-family: '', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"class="typewrite example" id="typewriter" data-period="2000" data-type='[ "Gwendolyn`s portfolio."]'>
     <span class="wrap"></span>
   </a>
 </h1>
 
 <!-- Navigation bar -->
-<div id="navbar" style="padding:20px;  z-index: 100;">
-    <a href="index.html" class="header-background"> <img src="img/logo.jpg" style="width: 70px;"></a>
-    <a href="experiences.html" class="header-background">Experiences</a>
-    <a href="certs.html" class="header-background">Certificates</a>
-    <a href="projects.html" class="header-background">Projects</a>
-    <a href="volunteer.html" class="header-background">Volunteer Work</a>
+
+<div id="navbar" style=" padding-top:20px; padding-bottom: 10px; z-index: 100;">
+  <span id="web">
+    <a href="index.html" class="header-background"> <img src="img/logo.jpg" style="width: 150px; max-width: 50%;" onContextMenu="return false;" draggable="false" (dragstart)="false;"></a>
+    <a href="experiences.html" class="header-background"><img src="img/experiences.png" style="width: 25px; max-width: 50%;">Experiences</a>
+    <a href="certs.html" class="header-background"><img src="img/certs.png" style="width: 25px; max-width: 50%;">Certificates</a>
+    <a href="projects.html" class="header-background"><img src="img/projects.png" style="width: 25px; max-width: 50%;">Projects</a>
+    <a href="volunteer.html" class="header-background"><img src="img/volunteer.png" style="width: 25px; max-width: 50%;">Volunteer Work</a>
+  </span>
       <!--resume button-->
     <!--<b href="/pdf/Gwendolyn resume.pdf" class="buttonsmall button2" target="_blank" text>Download CV</b> -->
     <!--<b href="contactme.html" class="header-background">Contact</b> -->
+  </div>
+    <script type="text/javascript" src="script.js"></script>
+
+    <div id="navbarm" class="sticky" style="padding:10px; z-index: 100;">
+      <span id="mobile" style="text-align: center;">
+        <a href="index.html" class=""> <img src="img/logo.jpg" style="width: 80px; max-width: 50%;"></a>
+        <a href="experiences.html" class=""><img src="img/experiences.png" style="width: 60px; max-width: 50%;"></a>
+        <a href="certs.html" class=""><img src="img/certs.png" style="width: 60px; max-width: 50%;"></a>
+        <a href="projects.html" class=""><img src="img/projects.png" style="width: 60px; max-width: 50%;"></a>
+        <a href="volunteer.html" class=""><img src="img/volunteer.png" style="width: 60px; max-width: 50%;"></a>
+      </span>
     </div>
     <script type="text/javascript" src="script.js"></script>
 
@@ -42,35 +66,35 @@
   <!--portfolio-->
       <section class="border">
         <h1 id=about style="text-align: center;">About Me <br> ________________</h1>
-        <br>
-        <br>
+        <br><br><br>
           <!--about me-->
   <!--photo-->
     <div class="flex-container">
       <div class="flex-left">
-        <p style="margin: 50px; font-size: 20px; ">
-          Hello im <span class="boujee-text">Gwendolyn Leong</span>, 19 this year. <br>I am a year 2 studying in Ngee Ann Polytechnic, School of ICT, <br>pursuing a diploma in <span class="boujee-text">Information Technology</span>.<br><br>
+        <p style=" font-size: 20px; margin: 10px;">
+          <br>Hello im <span class="boujee-text">Gwendolyn Leong</span>, 19 this year. I am a year 3 studying<br> in Ngee Ann Polytechnic, School of ICT, <br>pursuing a diploma in <span class="boujee-text">Information Technology</span>.<br>
+          Im currently having my internship at OCBC as an <span class="boujee-text">API Developer</span>.<br><br>
 
-          I am fluent in classics like Python and C#. <br><br>
+          I am fluent in classics such as Python and C#. <br><br>
 
-          My field of Interests are <span class="boujee-text">Data Analytics</span> as well as <span class="boujee-text">Web Application Development</span>. <br>
+          My field of Interests lies in <span class="boujee-text">Data Analytics</span> as well as <span class="boujee-text">Web <br>Application Development</span>. <br>
                     <!--resume button-->
         <a href="pdf/Gwendolyn resume.pdf" class="button button1" target="_blank" text>Download my resume here!</a>
         </p>
       </div>
   <div class="flex-right">
       <br>
-    <img src="img/me.jpg" width="auto" height="80px" display="flex" style="float: left; margin-right: 20px; margin-left: 20px; border-radius: 50%;">
+    <img src="img/me.jpg" display="flex" style=" margin-right: 20px; margin-left: 20px; border-radius: 50%; max-width: 50%;">
       </div>
     </div>
       </section>
 
 
       <!--skills-->
-      <div class="tag">
+      <div class="tag" id="web">
       <section class="border">
-        <h1 id="contact" style="text-align: center;">Skills <br> ________________</h1>
-        <br>
+        <h1 id="contact" style="text-align: center;">My Skills <br> ________________</h1>
+        <br><br><br><br>
       </section>
 
       <div style="position:relative;">
@@ -104,66 +128,154 @@
 
       </div>
       </div>
+      <br><br><br><br>
     </div>
-    
+
     
           <!--contact-->
-    <section class="border tag">
+    <div class="border tag" id="web">
       <h1 id="contact" style="text-align: center;">Contact Me <br> ________________</h1>
       <br>
-      <br>
-      <br>
-      <div style="text-align: center;" class="row">
-        <div class="col-sm-2"></div>
-        <a href="https://goo.gl/maps/ABmszTkBdH9AivD37" target="_blank">
-          <div style="width: 200px;" class="col-sm-4"><img src="img/address.png" alt=""></div>
-        </a>
-        <div class="col-sm-2" style="padding-top: 20px;"> Singapore</div>
-        <a href="wa.link/id4yxq" target="_blank">
-          <div style="width: 200px;" class="col-sm-4"><img src="img/phone.png" alt=""></div>
-        </a>
-        <div class="col-sm-2" style="padding-top: 20px;"> +65 96841062</div>
+
+                <!--web-->
+      <div >
+        <br>
+        <br>
+        <img src="img/infobtr.png" usemap="#workmap" style="height:438px; width:654.5px;" onContextMenu="return false;" draggable="false" (dragstart)="false;">
+        <map name="workmap">
+          <area target="_blank" alt="maps" title="maps" href="https://goo.gl/maps/ABmszTkBdH9AivD37" coords="174,178,245,99" shape="rect">
+          <area target="_blank" alt="phone" title="phone" href="https://wa.me/96841062" coords="295,99,365,178" shape="rect">
+          <area target="_blank" alt="mail" title="mail" href=mailto:gwenxdolyn@gmail.com coords="410,100,485,179" shape="rect">
+          <area target="_blank" alt="instagram" title="instagram" href="https://instagram.com/gwenxdolyn" coords="180,194,242,273" shape="rect">
+          <area target="_blank" alt="linkedin" title="linkedin" href="https://www.linkedin.com/in/gwndolyn/" coords="295,195,360,273" shape="rect">
+          <area target="_blank" alt="github" title="github" href="https://github.com/gwndolyn" coords="412,192,479,274" shape="rect">
+        </map>
+      </div>
       </div>
 
-        <div style="text-align: center;" class="row">
-          <div class="col-sm-2"></div>
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDQzBbwsxlHRNFBdlJXcCqVGZQvhSTLxQMBXdWFFJVmwgMwztgStZJlpzMgGRQxnWmMGzm" target="_blank">
-          <div style="width: 200px;" class="col-sm-4"><img src="img/mail.png" alt=""></div>
-        </a>
-        <div class="col-sm-2" style="padding-top: 20px;"> gwenxdolyn@gmail.com</div>
-        <a href="wa.link/id4yxq" target="_blank">
-          <a href="https://instagram.com/gwenxdolyn" target="_blank">
-            <div style="width: 200px;" class="col-sm-4"><img src="img/insta.png" alt=""></div>
-          </a>
-          <div class="col-sm-2" style="padding-top: 20px;"> @gwenxdolyn</div>
-        </div>
+          <!--mobile-->
+          <br>
+      <div id="mobile" style="font-size: 30px;">
+        <a href="https://goo.gl/maps/ABmszTkBdH9AivD37" target="_blank" text>
+          <button3><i class="fa fa-map"></i></button3></a>
+          <a href="https://wa.me/96841062" target="_blank" text>
+            <button3><i class="fa fa-phone"></i></button3></a>
+            <a href=mailto:gwenxdolyn@gmail.com target="_blank" text>
+              <button3><i class="fa fa-envelope"></i></button3></a>
+        <a href="https://instagram.com/gwenxdolyn" target="_blank" text>
+          <button3><i class="fa fa-instagram"></i></button3></a>
+          <a href="https://www.linkedin.com/in/gwndolyn/" target="_blank" text>
+            <button3><i class="fa fa-linkedin"></i></button3></a>
+        <a href="https://github.com/gwndolyn" target="_blank" text>
+          <button3><i class="fa fa-github"></i></button3></a>
+      </div>
 
-        <div style="text-align: center;" class="row">
-          <div class="col-sm-2"></div>
-        <a href="https://www.linkedin.com/in/gwndolyn/" target="_blank">
-          <div style="width: 200px;" class="col-sm-4"><img src="img/linkedin.png" alt=""></div>
-        </a>
-        <div class="col-sm-2" style="padding-top: 20px;"> @gwndolyn</div>
-      <a href="https://github.com/gwndolyn" target="_blank">
-        <div style="width: 200px;" class="col-sm-4"><img src="img/github.png" alt=""></div>
-      </a>
-      <div class="col-sm-2" style="padding-top: 20px;"> @gwndolyn</div>
-    </div>
-    </section>
+                <!--skills mobile-->
+      <div class="tag" id="mobile">
+            <div style="margin-top: 20px;">
+              <h1 id="contact" style="text-align: center;">My Skills <br> ________________</h1>
+              <br><br><br><br>
+            </div>
+            
+            <table>
+              <div class="col-sm-4">
+              <div class="card">
+                <div class="card-header">Programming Languages</div>
+
+                <div class="card-tags">
+                  <span class="card-tag">Python</span>
+                  <span class="card-tag">C#</span>
+                  <span class="card-tag">HTML CSS</span>
+                  <span class="card-tag">Javascript</span>
+                  <span class="card-tag">SQL</span>
+                  <span class="card-tag">Java</span>
+                </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">Data Analytics</div>
+  
+                  <div class="card-tags">
+                    <span class="card-tag">Excel</span>
+                    <span class="card-tag">Power Bi</span>
+                    <span class="card-tag">Machine Learning</span>
+                    <span class="card-tag">Jupyter</span>
+                    <span class="card-tag">Robotic Process Automation</span>
+                    <span class="card-tag">UIPath</span>
+                  </div>
+                  </div>
+
+              <div class="card">
+                <div class="card-header">Web Application Development</div>
+
+                <div class="card-tags">
+                  <span class="card-tag">C#</span>
+                  <span class="card-tag">MVC</span>
+                  <span class="card-tag">ASP.NET</span>
+                  <span class="card-tag">SQL</span>
+                  <span class="card-tag">HTML CSS JS</span>
+                </div>
+                </div>
+
+            <div class="card">
+              <div class="card-header">Mobile Application Development</div>
+
+              <div class="card-tags">
+                <span class="card-tag">Android Studio</span>
+                <span class="card-tag">Java</span>
+                <span class="card-tag">SQLite</span>
+              </div>
+              </div>
+
+          <div class="card">
+            <div class="card-header">Object-Oriented Design</div>
+
+            <div class="card-tags">
+              <span class="card-tag">Visual Paradigm</span>
+            </div>
+            </div>
+
+                <div class="card">
+                  <div class="card-header">Customer Experience Management</div>
+  
+                  <div class="card-tags">
+                    <span class="card-tag">Excel</span>
+                    <span class="card-tag">Power Bi</span>
+                    <span class="card-tag">Salesforce</span>
+                  </div>
+                  </div>
+
+              <div class="card">
+                <div class="card-header">Design</div>
+
+                <div class="card-tags">
+                  <span class="card-tag">Adobe Illustrator</span>
+                  <span class="card-tag">Adobe Photoshop</span>
+                  <span class="card-tag">Adobe XD</span>
+                  <span class="card-tag">Adobe Premiere Pro</span>
+                </div>
+                </div>
+            </div>
+            </table>
+      </div>
+
+
+      
 
       <!--get in touch-->
-      
-      <form class="tag">  
-        <h1 id="contact" style="text-align: center;">Leave me a Message!!  <br> ________________</h1>   
-        <br><br><br>
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-        <input type="submit" onclick="submit()" value="SUBMIT"/>
-        
-      </form>
+        <form class="tag">  
+          <h1 id="contact" style="text-align: center; margin-top: 30px;">Leave me a Message!!  <br> ________________</h1>   
+          <br><br><br>
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <input type="submit" onclick="submit()" value="SUBMIT"/>
+          
+        </form>
 
-    </section>
+
+
+
 
     
 
@@ -176,7 +288,7 @@
         <button3><i class="fa fa-linkedin"></i></button3></a>
 
   </p>
-  
+  <!--<script>$('img[usemap]').rwdImageMaps();</script>-->
 </body>
   </html>
   
